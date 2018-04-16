@@ -6,5 +6,5 @@ if [ -z $VENV ]; then
 fi
 . ${VENV}/bin/activate
 shift 1
-echo "Executing $@ in ${VENV}"
+echo "Executing $@ in ${VENV}" >&2
 exec "$@"
